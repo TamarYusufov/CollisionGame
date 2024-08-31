@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bone"
+    tools:context=".MainActivity">
+
+    <!-- hearts -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_layout_hearts"
+        android:layout_width="@dimen/all_hearts_width"
+        android:layout_height="@dimen/all_heart_height"
+        android:layout_alignParentTop="true"
+       android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/default_margin"
+       android:layout_marginEnd="@dimen/default_margin">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_heart0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_heart1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="@dimen/heart_margin"
+            app:srcCompat="@drawable/heart" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_heart2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--dogs-->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_dog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/matrix_margin"
+        android:layout_above="@id/main_BTN_layout">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_dog0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/german_shepherd"
+            android:visibility="invisible"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_dog1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/german_shepherd"
+            android:visibility="visible"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_dog2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/german_shepherd"
+            android:visibility="invisible"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--matrix of chocolate with 6 rows -->
+
+    <!-- chocolate row 0 -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_chocolate_0_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/matrix_margin"
+        android:layout_above="@id/main_BTN_layout"
+        android:visibility="invisible">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate"
+            android:visibility="invisible"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate"
+            android:visibility="invisible"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- chocolate row 1 -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_chocolate_1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/matrix_margin"
+        android:layout_above="@id/main_chocolate_0_layout">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- chocolate row 2 -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_chocolate_2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/matrix_margin"
+        android:layout_above="@id/main_chocolate_1_layout">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- chocolate row 3 -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_chocolate_3_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/matrix_margin"
+        android:layout_above="@id/main_chocolate_2_layout">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- chocolate row 4 -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_chocolate_4_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/matrix_margin"
+        android:layout_above="@id/main_chocolate_3_layout">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- chocolate row 5 -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_chocolate_5_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/matrix_margin"
+        android:layout_above="@id/main_chocolate_4_layout">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- buttons -->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+    android:id="@+id/main_BTN_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:gravity="center_horizontal"
+    android:layout_margin="@dimen/default_margin">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_BTN_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/arrow_button_left" />
+
+    <View
+        android:layout_width="180dp"
+        android:layout_height="0dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_BTN_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/arrow_button_right" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</RelativeLayout>
