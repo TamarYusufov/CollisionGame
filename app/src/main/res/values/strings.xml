@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">24c_10357hw1</string>
+    <string name="regular_mode">Regular Mode</string>
+    <string name="sensor_mode_slow">Sensor Mode - Slow</string>
+    <string name="scores_table">Scores Table</string>
+    <string name="sensor_mode_fast">Sensor Mode - Fast</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

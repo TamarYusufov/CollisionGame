@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bone"
-    tools:context=".MainActivity">
+    android:background="@drawable/background"
+    tools:context=".activities.MainActivity">
 
     <!-- hearts -->
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -41,6 +41,21 @@
             app:srcCompat="@drawable/heart" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_LBL_score"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/default_score_margin"
+        android:layout_marginTop="@dimen/default_score_margin"
+        android:layout_marginEnd="@dimen/default_score_margin"
+        android:layout_marginBottom="@dimen/default_score_margin"
+        tools:text="000"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="italic" />
+
+
     <!--dogs-->
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -67,10 +82,28 @@
             android:layout_weight="1"
             android:layout_gravity="center_horizontal"
             app:srcCompat="@drawable/german_shepherd"
-            android:visibility="visible"/>
+            android:visibility="invisible"/>
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/main_IMG_dog2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/german_shepherd"
+            android:visibility="visible"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_dog3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/german_shepherd"
+            android:visibility="invisible"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_dog4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -117,6 +150,23 @@
             android:layout_gravity="center_horizontal"
             app:srcCompat="@drawable/chocolate"/>
 
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate"
+            android:visibility="invisible"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate"/>
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <!-- chocolate row 1 -->
@@ -146,6 +196,22 @@
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/main_IMG_chocolate12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -187,6 +253,23 @@
             android:layout_gravity="center_horizontal"
             app:srcCompat="@drawable/chocolate"/>
 
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate"/>
+
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <!-- chocolate row 3 -->
@@ -216,6 +299,22 @@
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/main_IMG_chocolate32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate34"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -257,6 +356,22 @@
             android:layout_gravity="center_horizontal"
             app:srcCompat="@drawable/chocolate"/>
 
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate"/>
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <!-- chocolate row 5 -->
@@ -292,8 +407,342 @@
             android:layout_gravity="center_horizontal"
             app:srcCompat="@drawable/chocolate"/>
 
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate"/>
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_chocolate54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/chocolate"/>
+
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 
+    <!--matrix of coins with 6 rows -->
+
+    <!-- coin row 0 -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_coin_0_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/matrix_margin"
+        android:layout_above="@id/main_BTN_layout"
+        android:visibility="invisible">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin"
+            android:visibility="invisible"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin"
+            android:visibility="invisible"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin"
+            android:visibility="invisible"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- coin row 1 -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_coin_1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/matrix_margin"
+        android:layout_above="@id/main_coin_0_layout">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- coin row 2 -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_coin_2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/matrix_margin"
+        android:layout_above="@id/main_coin_1_layout">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- coin row 3 -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_coin_3_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/matrix_margin"
+        android:layout_above="@id/main_coin_2_layout">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- coin row 4 -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_coin_4_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/matrix_margin"
+        android:layout_above="@id/main_coin_3_layout">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- coin row 5 -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_coin_5_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/matrix_margin"
+        android:layout_above="@id/main_coin_4_layout">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin"/>
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin"/>
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_coin54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/coin"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
     <!-- buttons -->
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -306,22 +755,25 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/main_BTN_left"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_weight="1"
         android:background="@drawable/arrow_button_left" />
 
     <View
-        android:layout_width="180dp"
-        android:layout_height="0dp" />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="5"/>
 
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/main_BTN_right"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
+        android:layout_weight="1"
         android:background="@drawable/arrow_button_right" />
 
 

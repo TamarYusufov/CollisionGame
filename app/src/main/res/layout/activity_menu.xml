@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activities.MenuActivity">
+
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/default_margin">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/menu_IMG_icon"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/dog_icon_2" />
+
+
+    <Button
+        android:id="@+id/fast_BTN_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fast Mode" />
+
+    <Button
+        android:id="@+id/slow_BTN_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slow Mode" />
+
+    <Button
+        android:id="@+id/sensor_BTN_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensor Mode" />
+
+    <Button
+        android:id="@+id/record_table_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scores_table" />
+
+
+
+</LinearLayout>
+
+</RelativeLayout>
